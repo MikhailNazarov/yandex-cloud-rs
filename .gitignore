@@ -1,0 +1,5 @@
+target/
+result/
+# Ignore everything under src (except for lib.rs)
+src/*
+!src/lib.rs
