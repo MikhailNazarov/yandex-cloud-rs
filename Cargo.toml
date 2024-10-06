@@ -6,19 +6,19 @@ version = "0.1.0"
 edition = "2021"
 homepage = "https://cs.tvl.fyi/depot/-/tree/ops/yandex-cloud-rs"
 repository = "https://code.tvl.fyi/depot.git:/ops/yandex-cloud-rs.git"
-include = [ "/src", "README.md" ]
+include = ["/src", "README.md"]
 
 [dependencies]
-prost = "0.11"
-prost-types = "0.11"
+prost = "0.13.3"
+prost-types = "0.13.3"
 
 [dependencies.tonic]
-version = "0.9"
-features = [ "tls", "tls-roots", "gzip" ]
+version = "0.12.3"
+features = ["tls", "tls-roots", "gzip"]
 
 [build-dependencies]
-tonic-build = "0.9"
-walkdir = "2.3.3"
+tonic-build = "0.12.3"
+walkdir = "2.5.0"
 
 [dev-dependencies]
-tokio = "1.28" # check when updating tonic
+tokio = "1.40" # check when updating tonic

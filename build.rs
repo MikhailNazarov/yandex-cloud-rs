@@ -26,18 +26,17 @@ fn proto_files(proto_dir: &str) -> Vec<PathBuf> {
 
 fn main() {
     let proto_dir = "./cloudapi";
-        tonic_build::configure()
-            .build_client(true)
-            .build_server(false)
-            .out_dir("src/")
-            .include_file("includes.rs")
-            .compile(
-                &proto_files(proto_dir),
-                &[
-                    format!("{}", proto_dir),
-                    format!("{}/third_party/googleapis", proto_dir),
-                ],
-            )
-            .expect("failed to generate gRPC clients for Yandex Cloud")
-    
+    tonic_build::configure()
+        .build_client(true)
+        .build_server(false)
+        .out_dir("src/")
+        .include_file("includes.rs")
+        .compile_protos(
+            &proto_files(proto_dir),
+            &[
+                format!("{}", proto_dir),
+                format!("{}/third_party/googleapis", proto_dir),
+            ],
+        )
+        .expect("failed to generate gRPC clients for Yandex Cloud")
 }
