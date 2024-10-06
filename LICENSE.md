@@ -1,8 +1,8 @@
-MIT License
+# MIT License
 
-Copyright (c) 2019 Vincent Ambo
-Copyright (c) 2020-2023 The TVL Authors
-Copyright (c) 2024 Mikhail Nazarov
+- Copyright (c) 2019 Vincent Ambo
+- Copyright (c) 2020-2023 The TVL Authors
+- Copyright (c) 2024 Mikhail Nazarov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

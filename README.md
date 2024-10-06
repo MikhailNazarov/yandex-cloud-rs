@@ -6,4 +6,4 @@ Client library for Yandex Cloud gRPC APIs, as published in their GitHub reposito
 
 ## License
 
-[MIT License](https://github.com/MikhailNazarov/yandex-cloud-rs/blob/main/LICENSE)
+[MIT License](https://github.com/MikhailNazarov/yandex-cloud-rs/blob/main/LICENSE.md)
